@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-pattern';
+  title = 'pattern';
 
-  showMessage(value: boolean) {
-    console.log(value);
+  onToggle(on: boolean) {
+    console.log('toggle', on);
   }
 }
