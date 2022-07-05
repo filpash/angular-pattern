@@ -3,18 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToggleComponent } from './toggle/toggle.component';
-import { SwitchComponent } from './irrelevent-implementation-details/switch.component';
+import { ToggleModule } from './toggle/toggle.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ToggleComponent,
-    SwitchComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
